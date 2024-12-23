@@ -1,0 +1,22 @@
+{
+  "version": "v1",
+  "blocklist": [],
+  "data": [
+    {
+      "schema_version": "1.0.0",
+      "id": "r0fl_simple_toolbox",
+      "name": "r0fl Simple Toolbox",
+      "tagline": "General utilities that I find useful and adapt to my and other profressional colleagues workflows.",
+      "version": "0.0.13",
+      "type": "add-on",
+      "maintainer": "https://github.com/r0fld4nc3",
+      "license": [
+        "SPDX:GPL-3.0-or-later"
+      ],
+      "blender_version_min": "4.2.0",
+      "archive_url": "./r0fl_simple_toolbox.zip",
+      "archive_size": 23664,
+      "archive_hash": "sha256:24b475a7c4b022510762c80085e0961b84f86cc550e2702dd6257bc0f8c95c94"
+    }
+  ]
+}
