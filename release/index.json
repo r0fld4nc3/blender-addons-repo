@@ -14,9 +14,16 @@
         "SPDX:GPL-3.0-or-later"
       ],
       "blender_version_min": "4.2.0",
+      "tags": [
+        "3D View",
+        "Modeling",
+        "Mesh",
+        "Object",
+        "Pipeline"
+      ],
       "archive_url": "./r0fl_simple_toolbox.zip",
-      "archive_size": 22842,
-      "archive_hash": "sha256:6b4cfd6925e43142b090bd0345445f47d22d1a8e8af045bf6950e64651df1714"
+      "archive_size": 22958,
+      "archive_hash": "sha256:9836a95c93f58b9a387720ae2edf59b0eb86c44fe60093beafad5cd680c33dd4"
     }
   ]
 }
