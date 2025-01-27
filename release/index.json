@@ -4,7 +4,7 @@
   "data": [
     {
       "schema_version": "1.0.0",
-      "id": "r0fl_simple_toolbox",
+      "id": "r0tools_simple_toolbox",
       "name": "r0Tools - Simple Toolbox",
       "tagline": "General utilities that I find useful and adapt to my and other profressional colleagues workflows.",
       "version": "0.0.13",
@@ -22,8 +22,8 @@
         "Pipeline"
       ],
       "archive_url": "./r0fl_simple_toolbox.zip",
-      "archive_size": 27486,
-      "archive_hash": "sha256:546d87c7e8eaf08375306190bf884c194a492c7f26513ce32303f2ccfbb35c3d"
+      "archive_size": 27487,
+      "archive_hash": "sha256:d26f55eeb6ca65b58db1715c5e31c08e3f667f1f5bc704d8ad0eedfd4c6cc20f"
     }
   ]
 }
