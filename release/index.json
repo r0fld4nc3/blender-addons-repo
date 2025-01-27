@@ -5,7 +5,7 @@
     {
       "schema_version": "1.0.0",
       "id": "r0fl_simple_toolbox",
-      "name": "r0fl Simple Toolbox",
+      "name": "r0Tools - Simple Toolbox",
       "tagline": "General utilities that I find useful and adapt to my and other profressional colleagues workflows.",
       "version": "0.0.13",
       "type": "add-on",
@@ -22,8 +22,8 @@
         "Pipeline"
       ],
       "archive_url": "./r0fl_simple_toolbox.zip",
-      "archive_size": 22958,
-      "archive_hash": "sha256:9836a95c93f58b9a387720ae2edf59b0eb86c44fe60093beafad5cd680c33dd4"
+      "archive_size": 27486,
+      "archive_hash": "sha256:546d87c7e8eaf08375306190bf884c194a492c7f26513ce32303f2ccfbb35c3d"
     }
   ]
 }
