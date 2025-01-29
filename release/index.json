@@ -21,9 +21,9 @@
         "Object",
         "Pipeline"
       ],
-      "archive_url": "./r0fl_simple_toolbox.zip",
-      "archive_size": 27494,
-      "archive_hash": "sha256:2193913a11e7499e70d049156c517179451d34f42c03cf52fea73bade58fa3ce"
+      "archive_url": "./r0tools_simple_toolbox.zip",
+      "archive_size": 27542,
+      "archive_hash": "sha256:ebc1d70e9de5ad998669c83067079680ef465ff0a505d0169f8be64b7ee4fb95"
     }
   ]
 }
