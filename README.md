@@ -65,3 +65,6 @@ main()
 OR
 
 * Extracting and copy-pasting the folder(s) to your Blender's configuration .../scripts/addons folder.
+
+# Active Repositories
+* [r0Tools - Simple Toolbox](https://github.com/r0fld4nc3/blender-r0-simple-toolbox)
