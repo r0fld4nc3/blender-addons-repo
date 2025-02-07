@@ -7,7 +7,7 @@
       "id": "r0tools_simple_toolbox",
       "name": "r0Tools - Simple Toolbox",
       "tagline": "General utilities that I find useful and adapt to my and other profressional colleagues workflows.",
-      "version": "0.0.13",
+      "version": "0.0.14",
       "type": "add-on",
       "maintainer": "https://github.com/r0fld4nc3",
       "license": [
@@ -22,8 +22,8 @@
         "Pipeline"
       ],
       "archive_url": "./r0tools_simple_toolbox.zip",
-      "archive_size": 35379,
-      "archive_hash": "sha256:a526c7d6a8c29d21f9a26708c8579468b8d7b3f0e18c56097f9a421a3cf8e9cb"
+      "archive_size": 35375,
+      "archive_hash": "sha256:4874f8512064b23856f82d9fa32fe11479abc08a27f2559da39116bf886297bc"
     }
   ]
 }
