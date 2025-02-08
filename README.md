@@ -2,19 +2,24 @@
 The online repository for my personal Blender Extensions
 
 # Installation - Remote Extension
+
 * Copy the following script to automatically add the repository, name, access token and module name correctly to your Blender User Preferences
+
 ```python
 import bpy
 
-
-def add_remote_repo(name, remote_url: str, module: str = '', source = "USER", allow_duplicates=False) -> bpy.types.UserExtensionRepoCollection | None:
+def add_remote_repo(name, remote_url: str, module: str = '', source = "USER", sync_on_startup=False, allow_duplicates=False) -> tuple[bpy.types.UserExtensionRepoCollection, int] | None:
     print(f"Adding Remote Repository: {name}")
     
-    repo = bpy.types.UserExtensionRepoCollection.new(name=name, module=module, source=source, remote_url=remote_url)
+    prefs_extensions = bpy.context.preferences.extensions
+
+    repo = prefs_extensions.repos.new(name=name, module=module, source=source, remote_url=remote_url)
     
     if not allow_duplicates:
         name_split = repo.name.split('.')
         end = name_split[-1]
+        # Try to convert to int, meaning 001 = 1.
+        # If it fails, then it's likely that it doesn't exist, since it didn't break it up to end in '.00x'
         try:
             int(end)
             print("This repository is a duplicate. Deleting.")
@@ -22,21 +27,44 @@ def add_remote_repo(name, remote_url: str, module: str = '', source = "USER", al
             return None
         except ValueError as e:
             print("This repository is unique.")
+            
+    if sync_on_startup:
+        print(f"Setting repo {name} to sync on startup.")
+        repo.use_sync_on_startup = True
+        
+    repo_index = len(prefs_extensions.repos) - 1
+
+    print(f"{name} index: {repo_index}")
     
-    return repo
+    # Set the newly added repo as the active (selected) repo
+    prefs_extensions.active_repo = repo_index
+    
+    # Sync repo to remove to retrieve data
+    bpy.ops.extensions.repo_sync_all(use_active_only=True)
+    
+    return repo, repo_index
             
 
 def main():
-    repo = add_remote_repo(
+    ret = add_remote_repo(
         "r0Tools Extensions",
         "https://raw.githubusercontent.com/r0fld4nc3/blender-addons-repo/refs/heads/main/release/index.json",
-        module = "r0tools_extensions"
+        module = "r0tools_extensions",
+        sync_on_startup=True
     )
-    if repo:
-        repo.use_sync_on_startup = True
-        
+
+    if ret:
+        repo, repo_index = ret[0], ret[1]
+
+        # Bring up the User Preferences window and pre-search the addon name
         bpy.ops.screen.userpref_show()
-        bpy.data.window_managers["WinMan"].extension_search = "Simple Toolbox"
+        
+        bpy.context.preferences.active_section = 'EXTENSIONS'
+        
+        bpy.data.window_managers["WinMan"].extension_search = "r0tools"
+        
+        # Instal the package from the repository
+        bpy.ops.extensions.package_install(repo_index=repo_index, pkg_id="r0tools_simple_toolbox")
     
     return True
 
