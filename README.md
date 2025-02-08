@@ -78,10 +78,11 @@ main()
 * Click `New`
 * Paste the code
 * Hit the run arrow
-* It should open the `User Preferences` panel. Go to `Get Extensions`
-* Install the toolbox addon again
-* Delete the install script from the text editor
-* You now have the repository and version where all future addon updates will be added. So every time I push an update, all you have to do is go to extensions and hit "Update" and that's it 
+* It should open the `User Preferences` panel on the `Get Extensions` tab.
+* The code and file will remove themselves automatically.
+* You now have the repository and version where all future addon updates will be added.
+
+**Note:** If "nothing" happened, it is likely because the repository is already registered and so there is nothing to be done.
  
 
 # Installation - Local Addon
