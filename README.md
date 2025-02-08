@@ -62,9 +62,6 @@ def main():
         bpy.context.preferences.active_section = 'EXTENSIONS'
         
         bpy.data.window_managers["WinMan"].extension_search = "r0tools"
-        
-        # Install the package from the repository
-        bpy.ops.extensions.package_install(repo_index=repo_index, pkg_id="r0tools_simple_toolbox")
 
     bpy.ops.text.unlink()
     
@@ -80,7 +77,8 @@ main()
 * Hit the run arrow
 * It should open the `User Preferences` panel on the `Get Extensions` tab.
 * The code and file will remove themselves automatically.
-* You now have the repository and version where all future addon updates will be added.
+* The search parameter is filled automatically
+* You now have the repository and version where all future addon updates will be added. Simply install your desired addon(s) from the list.
 
 **Note:** If "nothing" happened, it is likely because the repository is already registered and so there is nothing to be done.
  
