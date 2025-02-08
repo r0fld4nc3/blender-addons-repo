@@ -65,6 +65,8 @@ def main():
         
         # Instal the package from the repository
         bpy.ops.extensions.package_install(repo_index=repo_index, pkg_id="r0tools_simple_toolbox")
+
+    bpy.ops.text.unlink()
     
     return True
 
