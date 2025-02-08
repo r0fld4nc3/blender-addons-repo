@@ -63,7 +63,7 @@ def main():
         
         bpy.data.window_managers["WinMan"].extension_search = "r0tools"
         
-        # Instal the package from the repository
+        # Install the package from the repository
         bpy.ops.extensions.package_install(repo_index=repo_index, pkg_id="r0tools_simple_toolbox")
 
     bpy.ops.text.unlink()
