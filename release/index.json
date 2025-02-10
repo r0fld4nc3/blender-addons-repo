@@ -6,14 +6,15 @@
       "schema_version": "1.0.0",
       "id": "r0tools_simple_toolbox",
       "name": "r0Tools - Simple Toolbox",
-      "tagline": "General workflow utitlies.",
-      "version": "0.0.14",
+      "tagline": "General workflow utitlies",
+      "version": "0.0.15",
       "type": "add-on",
       "maintainer": "https://github.com/r0fld4nc3",
       "license": [
         "SPDX:GPL-3.0-or-later"
       ],
       "blender_version_min": "4.2.0",
+      "website": "https://github.com/r0fld4nc3/blender-r0-simple-toolbox",
       "tags": [
         "3D View",
         "Modeling",
@@ -22,8 +23,8 @@
         "Pipeline"
       ],
       "archive_url": "./r0tools_simple_toolbox.zip",
-      "archive_size": 35334,
-      "archive_hash": "sha256:7f151d13d656d10f5772cfde62f2f70248619f46d4b1929a52b26ecd1cfa51ec"
+      "archive_size": 46401,
+      "archive_hash": "sha256:0a39738f89a6ac8bc1b2d0089ecb84355df0e7189ec7dc702e3cfbe2758a976a"
     }
   ]
 }
