@@ -6,6 +6,7 @@ The online repository for my personal Blender Extensions
 * Copy the following script to automatically add the repository, name, access token and module name correctly to your Blender User Preferences
 
 ```python
+import os
 import bpy
 
 def add_remote_repo(name, remote_url: str, module: str = '', source = "USER", sync_on_startup=False, allow_duplicates=False) -> tuple[bpy.types.UserExtensionRepoCollection, int] | None:
@@ -40,7 +41,10 @@ def add_remote_repo(name, remote_url: str, module: str = '', source = "USER", sy
     prefs_extensions.active_repo = repo_index
     
     # Sync repo to remove to retrieve data
-    bpy.ops.extensions.repo_sync_all(use_active_only=True)
+    try:
+        bpy.ops.extensions.repo_sync_all(use_active_only=True)
+    except RuntimeError as e:
+        print(f"Error triggering repo sync all. Likely no internet connection or no online access allowed: {e}")
     
     return repo, repo_index
             
@@ -63,7 +67,15 @@ def main():
         
         bpy.data.window_managers["WinMan"].extension_search = "r0tools"
 
-    bpy.ops.text.unlink()
+    try:
+        # Get the filename of the current script
+        filename = os.path.basename(__file__)
+
+        # Find and remove the text with that name
+        if filename in bpy.data.texts:
+            bpy.data.texts.remove(bpy.data.texts[filename])
+    except Exception as e:
+        print(f"Error in removing/unlinking script text file: {e}")
     
     return True
 
