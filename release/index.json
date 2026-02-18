@@ -4,6 +4,30 @@
   "data": [
     {
       "schema_version": "1.0.0",
+      "id": "r0tools_simple_toolbox_schedule_deferred_update_fix",
+      "name": "r0Tools - Simple Toolbox.schedule-deferred-update-fix",
+      "tagline": "General workflow utitlies",
+      "version": "0.3.3",
+      "type": "add-on",
+      "maintainer": "https://github.com/r0fld4nc3",
+      "license": [
+        "SPDX:GPL-3.0-or-later"
+      ],
+      "blender_version_min": "4.2.5",
+      "website": "https://github.com/r0fld4nc3/blender-r0-simple-toolbox",
+      "tags": [
+        "3D View",
+        "Modeling",
+        "Mesh",
+        "Object",
+        "Pipeline"
+      ],
+      "archive_url": "./r0tools_simple_toolbox.schedule-deferred-update-fix.zip",
+      "archive_size": 130617,
+      "archive_hash": "sha256:f77a1b282901682de45d1861aa0af75662232b736f8a1417ea206774fbaaeaef"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "r0tools_simple_toolbox",
       "name": "r0Tools - Simple Toolbox",
       "tagline": "General workflow utitlies",
