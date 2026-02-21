@@ -23,8 +23,8 @@
         "Pipeline"
       ],
       "archive_url": "./r0tools_simple_toolbox.schedule-deferred-update-fix.zip",
-      "archive_size": 130617,
-      "archive_hash": "sha256:f77a1b282901682de45d1861aa0af75662232b736f8a1417ea206774fbaaeaef"
+      "archive_size": 130356,
+      "archive_hash": "sha256:7855fc8bf0d397bbcac26270cfd13c242f4ec57bb32867e1bd8123fa861d4f68"
     },
     {
       "schema_version": "1.0.0",
