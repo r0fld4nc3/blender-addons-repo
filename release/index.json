@@ -22,33 +22,9 @@
         "Object",
         "Pipeline"
       ],
-      "archive_url": "./r0tools_simple_toolbox.schedule-deferred-update-fix.zip",
-      "archive_size": 130356,
-      "archive_hash": "sha256:7855fc8bf0d397bbcac26270cfd13c242f4ec57bb32867e1bd8123fa861d4f68"
-    },
-    {
-      "schema_version": "1.0.0",
-      "id": "r0tools_simple_toolbox",
-      "name": "r0Tools - Simple Toolbox",
-      "tagline": "General workflow utitlies",
-      "version": "0.3.2",
-      "type": "add-on",
-      "maintainer": "https://github.com/r0fld4nc3",
-      "license": [
-        "SPDX:GPL-3.0-or-later"
-      ],
-      "blender_version_min": "4.2.5",
-      "website": "https://github.com/r0fld4nc3/blender-r0-simple-toolbox",
-      "tags": [
-        "3D View",
-        "Modeling",
-        "Mesh",
-        "Object",
-        "Pipeline"
-      ],
       "archive_url": "./r0tools_simple_toolbox.zip",
-      "archive_size": 131103,
-      "archive_hash": "sha256:fef46e1472f43c1b1c0f8c30e94f1eae7231ffe1da7781e29a69fbe90200ffd5"
+      "archive_size": 131027,
+      "archive_hash": "sha256:6788c89ed809d2bd425e95585320c926e88d2c7af4111421b71a258881a18fce"
     }
   ]
 }
