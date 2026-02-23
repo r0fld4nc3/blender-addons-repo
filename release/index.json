@@ -7,7 +7,7 @@
       "id": "r0tools_simple_toolbox_schedule_deferred_update_fix",
       "name": "r0Tools - Simple Toolbox.schedule-deferred-update-fix",
       "tagline": "General workflow utitlies",
-      "version": "0.3.4",
+      "version": "0.3.5",
       "type": "add-on",
       "maintainer": "https://github.com/r0fld4nc3",
       "license": [
@@ -23,8 +23,8 @@
         "Pipeline"
       ],
       "archive_url": "./r0tools_simple_toolbox.zip",
-      "archive_size": 132951,
-      "archive_hash": "sha256:5bb49f072c61ce584664c97e99ae2713874262c53c1ef3dd6089f7ffc378c1db"
+      "archive_size": 133081,
+      "archive_hash": "sha256:5976fa440433216b36121cea8c5bb20d0d217ae2f74043120c209c61da8dd824"
     }
   ]
 }
