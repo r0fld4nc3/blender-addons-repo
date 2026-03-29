@@ -7,7 +7,7 @@
       "id": "r0tools_simple_toolbox",
       "name": "r0Tools - Simple Toolbox",
       "tagline": "General workflow utitlies",
-      "version": "0.3.8",
+      "version": "0.3.9",
       "type": "add-on",
       "maintainer": "https://github.com/r0fld4nc3",
       "license": [
@@ -23,8 +23,8 @@
         "Pipeline"
       ],
       "archive_url": "./r0tools_simple_toolbox.zip",
-      "archive_size": 130924,
-      "archive_hash": "sha256:b05640b4fbd747880f5188c3a0e262bfc6cbd3c0b84a1645af847d10bcfb2969"
+      "archive_size": 130991,
+      "archive_hash": "sha256:fc0eca2430e647599d26602c7f791c283211e9783562e0b27ed5778cca9fcb03"
     }
   ]
 }
